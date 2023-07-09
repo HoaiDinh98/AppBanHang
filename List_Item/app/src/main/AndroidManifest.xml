@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.List_Item"
+        tools:targetApi="31">
+        <activity
+            android:name="com.example.Yame.activity.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Yame.activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Yame.activity.frmTrangChu"
+            android:exported="true" />
+        <activity
+            android:name="com.example.Yame.activity.ChiTietSPActivity"
+            android:label="ChiTietSP" />
+        <activity
+            android:name="com.example.Yame.activity.GioHangActivity"
+            android:label="GioHangActivity" />
+        <activity
+            android:name="com.example.Yame.activity.LoginActivity"
+            android:exported="true"
+            android:label="LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.Yame.activity.RegisterActivity"
+            android:label="RegisterActivity" />
+        <activity
+            android:name="com.example.Yame.activity.UserActivity"
+            android:label="UserActivity" />
+    </application>
+
+</manifest>
